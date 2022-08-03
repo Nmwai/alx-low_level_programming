@@ -1,53 +1,66 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "3-calc.h"
 /**
- * op_add - 5 functions
- * @a: input one
- * @b: input two
- * Return: 0
+ * op_add - function that adds two integers
+ * @a: First argument
+ * @b: Second argument
+ *
+ * Return: Value of operations
  */
 int op_add(int a, int b)
 {
 	return (a + b);
 }
 /**
- * op_sub - 5 functions
- * @a: input one
- * @b: input two
- * Return: 0
+ * op_sub - function that substracs two integers
+ * @a: First argument
+ * @b: Second argument
+ *
+ * Return: Value of operations
  */
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
 /**
- * op_mul - 5 functions
- * @a: input one
- * @b: input two
- * Return: 0
+ * op_mul - function that multiplicates two integers
+ * @a: First argument
+ * @b: Second argument
+ *
+ * Return: Value of operations
  */
 int op_mul(int a, int b)
 {
 	return (a * b);
 }
 /**
- * op_div - 5 functions
- * @a: input one
- * @b: input two
- * Return: 0
+ * op_div - function that divides two integers
+ * @a: First argument
+ * @b: Second argument
+ *
+ * Return: Value of operations
  */
 int op_div(int a, int b)
 {
+	if (b <= 0 || b > a)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	return (a / b);
 }
 /**
- * op_mod - 5 functions
- * @a: input one
- * @b: input two
- * Return: 0
+ * op_mod - function that return the module of two integers
+ * @a: First argument
+ * @b: Second argument
+ *
+ * Return: Value of operations
  */
 int op_mod(int a, int b)
 {
+	if (b <= 0 || b > a)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 	return (a % b);
 }
